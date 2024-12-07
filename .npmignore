@@ -1,0 +1,9 @@
+.vscode
+src
+local
+node_modules
+tests
+
+.gitignore
+.npmignore
+tsconfig.json

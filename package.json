@@ -1,0 +1,25 @@
+{
+  "name": "bitboard",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "dist/index.js",
+  "scripts": {
+    "test": "tsx --test ./tests/**/*.test.ts",
+    "build": "tsup src/index.ts --outDir dist --format=esm --platform=node --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "description": "A small utility library for working with 64-bit integers in JavaScript.",
+  "keywords": [
+    "bit",
+    "board",
+    "chess"
+  ],
+  "author": "Melvin Doucet",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

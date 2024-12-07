@@ -1,0 +1,4 @@
+.vscode
+dist
+local
+node_modules
