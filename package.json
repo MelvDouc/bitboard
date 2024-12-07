@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "module": "dist/index.js",
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
   "scripts": {
     "test": "tsx --test ./tests/**/*.test.ts",
     "build": "tsup src/index.ts --outDir dist --format=esm --platform=node --dts",
